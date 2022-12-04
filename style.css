@@ -1,0 +1,146 @@
+@font-face{
+    font-family: 'martellas_scriptdemo_';
+    src: url('martellasscriptdemo-8myyz-webfont.woff2') format('woff2'),
+    url('martellasscriptdemo-8myyz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ 
+ 
+}
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+ 
+ 
+}
+.logo:hover{
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.navigatiebar{
+ 
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigatiebar ul li{
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+ 
+}
+.navigatiebar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navigatiebar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #22A895;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+ 
+}
+.navigatiebar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+ 
+ 
+ 
+}
+.content h1 {
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
+    font-size: 90px;
+    font-weight:normal;
+    font-style:normal;
+    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+}
+.content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'martellas_scriptdemo_', Arial, sans-serif;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+button{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid rgb(37,170,150) ;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+ 
+ 
+}
+span{
+    background: rgb(37,170,150) ;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    padding: 500px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto ;
+}
+ 
